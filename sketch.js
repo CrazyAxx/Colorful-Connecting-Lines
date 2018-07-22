@@ -2,7 +2,7 @@ var B = [];
 
 function setup(){
   createCanvas( windowWidth , windowHeight);
-  for( i = 0 ; i < 1200 ; i++ ){
+  for( i = 0 ; i < 250 ; i++ ){
     B[i] = new Ball();
   }
   
@@ -12,10 +12,10 @@ function setup(){
 function draw(){
    background( 0 , 0 , 0 );
   
-  for( i = 0 ; i < 1200 ; i++ ){
+  for( i = 0 ; i < 250 ; i++ ){
     B[i].evolve();
     
-    for( v = 0 ; v < 1200  ; v++ ){
+    for( v = 0 ; v < 250  ; v++ ){
       if( i != v ){
         B[i].drawBall(B[i].pos , B[v].pos);
       }
